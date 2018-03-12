@@ -43,53 +43,118 @@
     <!-- <hr /> -->
     <div class="top-nav">
       <ul class="list-inline">
-        <li><a href="#"><span>About</span></a></li>
-        <li><a href="#"><span>Projects</span></a></li>
-        <li><a href="#"><span>Blog</span></a></li>
-        <li><a href="#"><span>Contact</span></a></li>
+        <li><a href="#about-js"><span>About</span></a></li>
+        <li><a href="#project-js"><span>Projects</span></a></li>
+        <li><a href="#blog-js"><span>Blog</span></a></li>
+        <li><a href="#contact-js"><span>Contact</span></a></li>
       </ul>
     </div>
   </div>
 </div>
 
+<!--About section-->
 <div id="about-js">
   <div class="about-page">
-  </br></br>
-    <h2 class="about-title">ABOUT</h2>
+    &nbsp
+    <h2 style="margin-top: 4em;" class="about-title">ABOUT</h2>
     <div class="center-box">
       <div class="about-box"> <!-- Highlight box with darker color -->
         </br>
-        <p>This is a small portfolio about things I am working on.</p>
-        <p>Some detailed blueprints and guides I've made over time.</p>
+        <p>I created this simple website to share some personal projects of mine,</p>
+        <p>I hope that it may interest, encourage, and inspire others.</p>
+        <p style="text-align: center; margin-top: 2em;">- Syed.</p>
+        <!-- <p>This is a small portfolio about things I am working on.</p> -->
         </br>
       </div>
     </div>
   </div>
 </div>
+
+<!--Project section-->
 <div id="project-js">
   <div class="project-page">
-  </br></br>
+    &nbsp
     <h2 class="project-title">PROJECTS</h2>
     <div class="center-box">
+      <div class="project-section-img">
+        <img src="img/Untitled.png" width="30%" height="30%"/>
+      </div>
+      <div class="project-section-description">
+        <p class="project-subtitle">Some Title</p>
+        <p>Some description.</p>
+        <a href="#">See more...</a>
+      </div>
 
+      <div class="project-section-img">
+        <img src="img/Untitled.png" width="30%" height="30%"/>
+      </div>
+      <div class="project-section-description">
+        <p class="project-subtitle">Some Title</p>
+        <p>Some description.</p>
+        <a href="#">See more...</a>
+      </div>
+
+      <div class="project-section-img">
+        <img src="img/Untitled.png" width="30%" height="30%"/>
+      </div>
+      <div class="project-section-description">
+        <p class="project-subtitle">Some Title</p>
+        <p>Some description.</p>
+        <a href="#">See more...</a>
+      </div>
     </div>
   </div>
 </div>
+
+<!--Blog section-->
 <div id="blog-js">
   <div class="blog-page">
-    </br></br>
+  </br></br></br></br></br></br>
     <h2 class="blog-title">BLOG</h2>
     <div class="center-box">
+      <div class="blog-left">
+        <img src="img/Untitled2.png" width="30%" height="30%"/>
+      </div>
+      <div class="blog-right">
+        <div class="blog-template-heading">First Blog</div>
+        <div class="blog-template-date">Thu, March 13 2018</div>
+        <div class="blog-template-text">
+          <p>Some description.</p>
+        </div>
+      </div>
+      <!-- <div class="blog-likecomment"> <!--facebook like comment api-->
 
+      </div>
+      <div class="blog-connect"> <!--linkedin connect api-->
+
+      </div>
     </div>
   </div>
 </div>
+
+<!--Contact section-->
 <div id="contact-js">
   <div class="contact-page">
-    </br></br>
+    &nbsp
     <h2 class="contact-title">CONTACT</h2>
     <div class="center-box">
-      <p class="contact-title">Faizanh53@gmail.com</p>
+      <div class="span8">
+          <form action="#" method="POST" id="contact-form" name="contact-form">
+            <div style="margin-bottom: 20px;">
+                <input name="name" placeholder="Name" required="" type="text">
+                <input name="email" placeholder="Email" required="" type="email">
+                <input name="phone" placeholder="Phone" required="" type="text">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <textarea class="message" name="message" placeholder="Message" required="" rows="6"></textarea>
+            </div>
+            <div style="float: center;">
+                <input onclick="myFunction()" id="send" class="button" type="submit" value="send">
+            </div>
+          </form>
+      </div>
+      <!-- <p class="contact-title">Faizanh53@gmail.com</p> -->
+    </br></br>
       <ul class="list-inline" style="padding-left: 10px;">
           <li><a href="//github.com/faizanh" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a></li>
           &nbsp;

@@ -65,6 +65,7 @@ h3 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 15.4px;
+  color: white;
 }
 
 h4 {
@@ -133,6 +134,124 @@ a:hover {
     outline: 0;
 }
 
+.button {
+    color: #fff;
+    font-size: 12px;
+    background: 0 0;
+    font-weight: 100;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 65px;
+    padding-left: 27px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #F65151 !important;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+input {
+    width: 15%;
+    display: inline-grid;
+}
+
+input[type=email],
+input[type=text],
+textarea {
+    border: none;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin: 0 20px 10px 0;
+    display: inline-block;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    background: rgba(0, 0, 0, .5);
+}
+
+input[type=text]:first-of-type,
+textarea[type=text]:first-of-type {
+    margin-left: 0;
+}
+
+input[type=text]:last-of-type {
+    margin-right: 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+}
+
+.message {
+    height: 25%;
+    width: 90%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: #D5D8DC;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+#contact-form .button {
+    color: #F04;
+    border: 1px solid #F65151;
+}
+
+#contact-form .button:hover {
+    background: #F04;
+    color: #FFF !important;
+}
+
+.span8 {
+    width: 50%;
+    display: inline-block;
+}
+
 #particles-js {
   width: 100vw;
   height: 100vh;
@@ -163,7 +282,7 @@ a:hover {
 
 #contact-js {
   width: 100vw;
-  height: 50vh;
+  height: 65vh;
   background: #34495e;
   position: relative;
 }
@@ -189,25 +308,16 @@ a:hover {
     position: absolute;
 }
 
-.about-box {
-  width: 60%;
-  margin-left: 20%;
-  background-color: #ecf0f1;
+.center-box {
+  text-align: center;
+  font-size: 1em;
+  top: 90%;
+  position: relative;
 }
+
+/*About Section*/
 
 .about-title {
-
-}
-
-.contact-title {
-  color: #fff;
-}
-
-.project-title {
-
-}
-
-.blog-title {
 
 }
 
@@ -215,7 +325,58 @@ a:hover {
 
 }
 
+.about-box {
+  width: 60%;
+  margin-left: 20%;
+  background-color: #ecf0f1;
+}
+
+/*Project Section*/
+
+.project-title {
+
+}
+
 .project-page {
+
+}
+
+.project-subtitle {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 36px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+.row.project-list {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.project-section-img {
+  width: 50%;
+  float: left;
+  padding: 1.25em;
+  min-height: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-section-description {
+  width: 40%;
+  float: left;
+  padding: 1.25em;
+  min-height: 1px;
+  overflow: hidden;
+  position: relative;
+  text-align: justify;
+}
+
+/*Blog section*/
+
+.blog-title {
 
 }
 
@@ -223,15 +384,69 @@ a:hover {
 
 }
 
-.contact-page {
+.blog-template-heading {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 36px;
+	font-style: bold;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+.blog-template-date {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 350;
+	line-height: 26.4px;
+  margin-top: 0.5em;
+}
+
+.blog-subheading {
 
 }
 
-.center-box {
-  text-align: center;
-  font-size: 1em;
-  top: 90%;
+.blog-template-text {
+  margin-top: 0.5em;
+}
+
+.blog-right {
+  right: 25%;
+  width: 15%;
+  float: left;
+  padding: 1.25em;
+  min-height: 1px;
+  overflow: hidden;
   position: relative;
+  text-align: justify;
+}
+
+.blog-left {
+  width: 74%;
+  float: left;
+  padding: 1.25em;
+  min-height: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-likecomment {
+
+}
+
+.blog-connect {
+
+}
+
+/*Contact Section*/
+
+.contact-title {
+  color: #fff;
+}
+
+.contact-page {
+
 }
 
 list-inline {
